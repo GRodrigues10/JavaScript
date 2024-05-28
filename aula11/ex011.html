@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.575));
+        }
+        h1{
+            text-align: center;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        input{
+            width: 200px;
+            
+        }
+        input.botão{
+            width: 80px;
+            box-shadow: 1px 1px 1px black;
+        }
+        input.botão:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 1px 1px 1px white
+        }
+
+        div.resultado{
+            color: yellow;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    País <input type="text" name="país" id="ipaís" placeholder="Digite o seu país...">
+    <input type="button" value="Verificar" onclick= "clicar()" class="botão">
+    <div class="resultado"></div>
+
+    <script>
+        function clicar() {
+            var p = window.document.getElementById('ipaís').value;
+            var res = window.document.getElementsByClassName('resultado')[0];
+
+            if (p.toLowerCase() === 'brasil') {
+                res.innerHTML = `Você é brasileiro e mora no ${p}`;
+            } else {
+                res.innerHTML = 'Você não é brasileiro ou o país não foi selecionado corretamente.';
+            }
+        }
+    </script>
+    
+</body>
+</html>

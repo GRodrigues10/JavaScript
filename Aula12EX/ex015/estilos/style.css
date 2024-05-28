@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+body{
+    background: rgb(71, 71, 151);
+    font: normal 20px arial;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+img{
+    margin-top: 20px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    max-width: 300px; /* Defina o valor desejado para a largura máxima */
+    height: 300px;
+    border-radius: 30px
+
+    }
+
+
+
+
